@@ -215,7 +215,7 @@ echo "---- Downloading and initializing"
 
 ./$DAEMON init $MONIKER
 if [ "$SKIP_GENESIS" != true ]; then
-  wget -O ~/.carbon/config/genesis.json ${CHAIN_MEDIA_URL}/genesis.json
+  wget -O ~/.carbon/config/genesis.json ${CHAIN_CONFIG_URL}/genesis.json
 fi
 
 echo "---- Setting node configuration"
